@@ -4,7 +4,7 @@ _This implement an HTTP API to support a team-member management
 application. The application supports listing team members, adding a new team member, editing a team member,
 and deleting a team member._
 
-####APIs supported:
+#### APIs supported:
 
 - Lists all members.
 - Given Id, view an existing member. 
@@ -12,7 +12,7 @@ and deleting a team member._
 - Update an existing member
 - Delete an existing member.
 
-####Prerequisites and Setup steps are mentioned below.
+#### Prerequisites and Setup steps are mentioned below.
 
 **Prerequisites**
 
@@ -21,7 +21,7 @@ To check if present: run command - `python3 --version` on terminal, it should gi
 2. Install pip3 (https://www.makeuseof.com/tag/install-pip-for-python/)
 3. Install virtual environment (pip3 install virtualenv) 
 
-#####Update mysql username & password in `team_app/settings.py` at line 83-84
+##### Update mysql username & password in `team_app/settings.py` at line 83-84
 ```
 DATABASES = {
     'default': {
@@ -36,6 +36,7 @@ DATABASES = {
 ```
 
 **Steps to set up:**
+
 1. `cd path/to/teamapp ` in terminal
 2. `virtualenv -p python3 env` to create new virtual environment to install required packages (This is highly recommended)
 3. `source env/bin/activate` (Activate the virtual environment)
@@ -44,6 +45,7 @@ DATABASES = {
 6.  `python manage.py migrate` (Make database migrations)
 
 **Run Server**
+
 Run command : `python manage.py runserver` 
 If the set up is done correctly, it should show like this: 
 ```
@@ -60,6 +62,7 @@ Quit the server with CONTROL-C.
 ```
 
 **Open Page:** 
+
 Further API details can be viewed from here:
 http://127.0.0.1:8000/
 
