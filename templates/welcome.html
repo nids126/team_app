@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>Instawork-Portal</title>
+</head>
+<body>
+<h1 style="font-weight: normal; line-height: 1.2; color: rgb(51, 51, 51); font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;;">Team Members Information Portal</h1>
+
+<p style="color: rgb(51, 51, 51); font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;; font-size: 13px;"><big>This is a portal to view team members information.</big></p>
+
+<p style="color: rgb(51, 51, 51); font-family: sans-serif, Arial, Verdana, &quot;Trebuchet MS&quot;; font-size: 13px;"><span style="font-size:14px;"><u><strong>URLs for CRUD operation</strong>&nbsp;</u></span></p>
+
+<p><b>1. List all team members</b></p>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
+<p>URL :&nbsp;http://127.0.0.1:8000/members</p>
+
+<p>Request Type: GET</p>
+</div>
+
+<p><b>2. Add New Team Member</b></p>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
+<p>URL :&nbsp;http://127.0.0.1:8000/members/create</p>
+
+<p>Request Type: POST</p>
+
+<p>Request Body:&nbsp;</p>
+
+<p>{<br />
+&nbsp; &nbsp; &nbsp; &quot;firstName&quot;: &quot;First Name&quot; &lt;required&gt;,<br />
+&nbsp; &nbsp; &nbsp; &quot;lastName&quot;: &quot;Last Name&quot;&lt;required&gt;,<br />
+&nbsp; &nbsp; &nbsp; &quot;phoneNumber&quot;: &quot;Phone Number&quot; &lt;required&gt;,<br />
+&nbsp; &nbsp; &nbsp; &quot;email&quot;: &quot;Email Address&quot; &lt;required&gt;,<br />
+&nbsp; &nbsp; &nbsp; &quot;role&quot;: &quot;[ADMIN/REGULAR] &lt;optional&gt; {default: REGULAR}&quot;<br />
+}</p>
+</div>
+
+<p><b>3. View Team Member</b></p>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
+<p>URL :&nbsp;http://127.0.0.1:8000/members/&lt;member_id&gt;</p>
+
+<p>Request Type: GET</p>
+</div>
+
+<p><b>4. Update Existing Team Member</b></p>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
+<p>URL :&nbsp;http://127.0.0.1:8000/members/update/&lt;member_id&gt;</p>
+
+<p>Request Type: POST</p>
+
+<p>Request Body: <span style="background-color: rgb(238, 238, 238);">{</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">&nbsp; &nbsp; &nbsp; &quot;firstName&quot;: &quot;Updated First Name</span><span style="background-color: rgb(238, 238, 238);">&quot;,</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">&nbsp; &nbsp; &nbsp; &quot;lastName&quot;: &quot;Updated Last Name&quot;</span><span style="background-color: rgb(238, 238, 238);">,</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">&nbsp; &nbsp; &nbsp; &quot;phoneNumber&quot;: &quot;Updated Phone Number&quot;,</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">&nbsp; &nbsp; &nbsp; &quot;email&quot;: &quot;Updated Email Address&quot;,</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">&nbsp; &nbsp; &nbsp; &quot;role&quot;: &quot;Updated Role</span><span style="background-color: rgb(238, 238, 238);">&quot;</span><br style="background-color: rgb(238, 238, 238);" />
+<span style="background-color: rgb(238, 238, 238);">}</span></p>
+</div>
+
+<p><b>5. Delete Existing Team Member</b></p>
+
+<div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">
+<p>URL :&nbsp;http://127.0.0.1:8000/members/delete/&lt;member_id&gt;</p>
+
+<p>Request Type: DELETE</p>
+</div>
+
+<p>&nbsp;</p>
+</body>
+</html>
