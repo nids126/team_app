@@ -83,5 +83,5 @@ http://127.0.0.1:8000/
 - Update an existing member.  
 `curl http://127.0.0.1:8000/members/update/<memberId> -H "content-type: application/json" -d '{"firstName": "Sample", "lastName": "User4", "phoneNumber": "9003689888", "email": "sampleuser4@gmail.com"}'`
 
-- Delete an existing member.
-`http://127.0.0.1:8000/members/delete/<memberId>`
+- Delete an existing member.  
+`curl -X DELETE http://127.0.0.1:8000/members/delete/7`
